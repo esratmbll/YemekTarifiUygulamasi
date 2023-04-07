@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainKayitOl">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="368dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="24dp"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center"
+        android:text="Giris Bilgilerinizi Olusturun. Lütfen"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/KayitKullaniciText"
+        android:layout_width="292dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="49dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="70dp"
+        android:ems="10"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center"
+        android:hint="Kullanıcı Adınızı Olusturun"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <EditText
+        android:id="@+id/parolakayitText"
+        android:layout_width="289dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="51dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="71dp"
+        android:ems="10"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center"
+        android:hint="Parolanızı Olusturun"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/KayitKullaniciText" />
+
+    <Button
+        android:id="@+id/kayitOlText"
+        android:layout_width="149dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="51dp"
+        android:layout_marginEnd="51dp"
+        android:onClick="saveAction"
+        android:text="Kaydet"
+        app:layout_constraintEnd_toStartOf="@+id/GiriseDonText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/parolakayitText" />
+
+    <Button
+        android:id="@+id/GiriseDonText"
+        android:layout_width="146dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="51dp"
+        android:layout_marginTop="53dp"
+        android:layout_marginEnd="31dp"
+        android:onClick="BackAction"
+        android:text="Girise Dön"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/kayitOlText"
+        app:layout_constraintTop_toBottomOf="@+id/parolakayitText" />
+</androidx.constraintlayout.widget.ConstraintLayout>
